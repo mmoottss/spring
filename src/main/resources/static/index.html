@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Hello World!
+<br>
+<input id="ID"type="text">
+<input id = "PW",type="text">
+<button onclick="registerB()"></button>
+</body>
+<script>
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST", "/dbcall", false);
+    xhr.send();
+    console.log(xhr.responseText);
+
+</script>
+<script src="register.js"></script>
+</html>
